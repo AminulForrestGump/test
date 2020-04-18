@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>HI PART TWO</title>
+	</head>
+	<body>
+		<h1>Its been long journey to complete part two, now i have to move on part three</h1>
+		{% if love %}
+		<ol>
+			{% for success in love %}
+			<li>USERS INFOMATION </li>
+			<ul>
+				<li>First Name :{{ success.first_name}}</li>
+				<li>Last Name :{{ success.last_name}}</li>
+				<li>Email Address :{{ success.email}}</li>
+			</ul>
+			{% endfor %}
+		</ol>
+		{% else %}
+		<p>Sorry i have to check again </p>
+		{% endif %}
+	</body>
+</html>
